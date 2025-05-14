@@ -1,19 +1,49 @@
 import clsx from 'clsx';
 
-export const CommonBadge = ({ children, className }) => {
+export const CommonBadge = ({ children, className, bgColor, textColor }) => {
   return (
-    <div className={clsx('py-1.5 px-2.5 bg-secondary text-primary text-sm rounded-xl ', className)}>{children}</div>
+    <div
+      className={clsx('py-1 px-2.5 text-sm rounded-xl bg-secondary text-primary', className)}
+      style={{ backgroundColor: bgColor, color: textColor }}
+    >
+      {children}
+    </div>
   );
 };
 
 export const CommonCard = ({ children, className }) => {
-  return <div className={clsx('rounded-[10px] bg-primary', className)}>{children}</div>;
+  return <div className={clsx('rounded-[10px] bg-secondary', className)}>{children}</div>;
 };
 
 export const SectionHeading = ({ children, className }) => {
-  return <h1 className={clsx('font-semibold text-[32px] leading-normal pb-10', className)}>{children}</h1>;
+  return <h1 className={clsx('font-semibold text-[32px] leading-normal pb-16', className)}>{children}</h1>;
 };
 
 export const SubHeading = ({ children, className }) => {
   return <h1 className={clsx('font-semibold text-[20px]', className)}>{children}</h1>;
+};
+
+export const CommonSection = ({ id, children, className }) => {
+  return (
+    <section
+      id={id}
+      className={clsx('flex flex-col justify-center', className)}
+    >
+      {children}
+    </section>
+  );
+};
+
+export const LinkText = ({ link, children, className }) => {
+  return (
+    <p>
+      <a
+        href={link}
+        target="_blank"
+        className={clsx(`inline-flex flex-row gap-2 text-linkblue text-sm underline`, className)}
+      >
+        {children}
+      </a>
+    </p>
+  );
 };

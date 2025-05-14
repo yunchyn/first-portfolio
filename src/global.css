@@ -18,7 +18,7 @@ body {
   color: #000000;
   background-color: #ffffff;
   cursor: default;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   /* letter-spacing: -0.5px; */
   word-break: keep-all;
 }
@@ -27,6 +27,8 @@ body {
   --color-primary: #8f95ac;
   --color-secondary: #e8eaf2;
   --color-darkgray: #353840;
+  --color-gray: #9fa5ba;
+  --color-linkblue: #6a83d5;
   --color-background: #ffffff;
   --color-foreground: #000000;
 }

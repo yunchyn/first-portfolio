@@ -1,15 +1,16 @@
 import React from 'react';
-import LinkButton from '../ui/LinkButton';
 import GithubIcon from '../ui/icon/GithubIcon';
 import TistoryIcon from '../ui/icon/TistoryIcon';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { blogLink, gitHubLink } from '@/data/initials';
+import LinkButton from '../ui/atoms/LinkButton';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 70) {
+      if (window.scrollY > 90) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -40,7 +41,7 @@ export default function Header() {
         <LinkButton
           className="bg-[#71737C] text-white"
           isScrolled={isScrolled}
-          link="https://github.com/yunchyn"
+          link={gitHubLink}
         >
           <GithubIcon size={isScrolled ? 15 : 20} />
           {!isScrolled && '깃허브'}
@@ -48,7 +49,7 @@ export default function Header() {
         <LinkButton
           className="bg-[#ED9E6D] text-white"
           isScrolled={isScrolled}
-          link="https://pom-pomm.tistory.com"
+          link={blogLink}
         >
           <TistoryIcon size={isScrolled ? 15 : 20} />
           {!isScrolled && '블로그'}

@@ -3,7 +3,7 @@ import { Router } from './Router';
 
 export default function App() {
   return (
-    <div className="w-screen h-screen">
+    <div className="w-full h-screen">
       <RouterProvider router={Router} />
     </div>
   );

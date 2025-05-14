@@ -1,5 +1,5 @@
 import React from 'react';
-import LinkButton from './LinkButton';
+import LinkButton from '../atoms/LinkButton';
 
 export default function BlogCard({ image, title, link }) {
   return (
@@ -15,7 +15,7 @@ export default function BlogCard({ image, title, link }) {
           <div className="flex justify-end mt-auto">
             <LinkButton
               link={link}
-              className="bg-secondary text-primary text-[13px] py-[6px] px-2 inline-block"
+              className="bg-secondary text-primary text-[13px] py-[5px] px-[11px] inline-block"
             >
               바로가기
             </LinkButton>

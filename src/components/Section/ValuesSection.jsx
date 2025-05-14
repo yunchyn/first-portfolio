@@ -1,13 +1,10 @@
 import React from 'react';
 
-import { CommonCard, SectionHeading, SubHeading } from '../ui/CommonLayouts';
+import { CommonCard, CommonSection, SectionHeading, SubHeading } from '../ui/CommonLayouts';
 
 export default function ValuesSection() {
   return (
-    <section
-      id="values"
-      className="h-screen "
-    >
+    <CommonSection id="values">
       <SectionHeading>아래와 같은 요소들을 중심 가치로 삼고 있습니다.</SectionHeading>
       <CommonCard></CommonCard>
       <SubHeading>
@@ -16,6 +13,6 @@ export default function ValuesSection() {
         <br />
         중점 가치로 두고 있습니다.
       </SubHeading>
-    </section>
+    </CommonSection>
   );
 }
