@@ -8,7 +8,7 @@ export default function ProfileArea() {
   return (
     <section className="flex items-center space-x-12 pb-5 w-full">
       <div
-        className="bg-[url('img/profile-img.png')] bg-cover
+        className="bg-[url('/img/profile-img.png')] bg-cover
          bg-secondary w-[220px] aspect-square rounded-[10px]"
       ></div>
       <div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { CommonBadge, CommonSection, SectionHeading } from '../ui/CommonLayouts';
+import { CommonSection, SectionHeading } from '../ui/CommonLayouts';
 import MailIcon from '../ui/icon/MailIcon';
 import CallIcon from '../ui/icon/CallIcon';
 import ChevronUpIcon from '../ui/icon/ChevronUpIcon';
@@ -21,7 +21,7 @@ export default function ContactSection() {
       </p>
       <div className="flex flex-row items-center gap-4 pb-22">
         <div
-          className="bg-[url('img/profile-img2.png')] bg-cover
+          className="bg-[url('/img/profile-img2.png')] bg-cover
          bg-secondary w-[130px] aspect-square rounded-[10px]
          my-4"
         ></div>
