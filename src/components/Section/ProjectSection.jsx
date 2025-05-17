@@ -1,7 +1,8 @@
 import React from 'react';
 import { SectionHeading } from '../ui/CommonLayouts';
-import { projectList } from '@/data/initials';
+
 import ProjectItem from '../ui/molecules/ProjectItem';
+import { projectList } from '@/data/projectData';
 
 export default function ProjectSection() {
   return (

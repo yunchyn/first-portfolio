@@ -15,7 +15,7 @@ export default function BlogCard({ image, title, link }) {
           <div className="flex justify-end mt-auto">
             <LinkButton
               link={link}
-              className="bg-secondary text-primary text-[13px] py-[5px] px-[11px] inline-block"
+              className="bg-secondary hover:bg-secondary-light text-primary text-[13px] py-[5px] px-[11px] inline-block"
             >
               바로가기
             </LinkButton>

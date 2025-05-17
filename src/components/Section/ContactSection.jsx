@@ -5,6 +5,10 @@ import CallIcon from '../ui/icon/CallIcon';
 import ChevronUpIcon from '../ui/icon/ChevronUpIcon';
 
 export default function ContactSection() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <CommonSection
       id="contact"
@@ -13,7 +17,7 @@ export default function ContactSection() {
       <SectionHeading>읽어주셔서 감사합니다.</SectionHeading>
       <p>
         자세한 내용은 인터뷰를 통해 설명드리고 싶습니다. <br />
-        성실히 면접에 임하는 면접자가 되겠습니다. 감사합니다.
+        감사합니다.
       </p>
       <div className="flex flex-row items-center gap-4 pb-22">
         <div
@@ -39,9 +43,13 @@ export default function ContactSection() {
         <p className="text-sm text-primary leading-4.5">
           마지막 업데이트
           <br />
-          2020.10.10
+          2025.05.17
         </p>
-        <button className="inline-block bg-secondary text-sm text-primary rounded-xl py-1 px-2.5 self-center">
+        <button
+          onClick={scrollToTop}
+          className="inline-block bg-secondary  text-sm text-primary rounded-xl py-1 px-2.5 self-center 
+          hover:bg-secondary-light duration-300 cursor-pointer"
+        >
           페이지 상단으로
           <ChevronUpIcon className="inline-block ml-1" />
         </button>

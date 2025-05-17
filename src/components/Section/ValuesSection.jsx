@@ -1,18 +1,32 @@
 import React from 'react';
 
 import { CommonCard, CommonSection, SectionHeading, SubHeading } from '../ui/CommonLayouts';
+import { values } from '@/data/initials';
 
 export default function ValuesSection() {
   return (
     <CommonSection id="values">
       <SectionHeading>아래와 같은 요소들을 중심 가치로 삼고 있습니다.</SectionHeading>
-      <CommonCard></CommonCard>
-      <SubHeading>
-        재사용 가능한 아토믹 디자인으로 <br />
-        웹을 개발하는 것을
-        <br />
-        중점 가치로 두고 있습니다.
-      </SubHeading>
+      <div className="space-y-6">
+        {values.map((item, index) => (
+          <div
+            key={index}
+            className="flex flex-row gap-8 items-center"
+          >
+            <CommonCard className="w-2/5 h-50 ">
+              <img
+                src={item.img}
+                alt="이미지 설명"
+                className="w-full h-full object-contain mx-auto"
+              />
+            </CommonCard>
+            <div className="w-3/5">
+              <SubHeading className="leading-6">{item.title}</SubHeading>
+              <p className="text-gray text-sm pt-2">{item.desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
     </CommonSection>
   );
 }

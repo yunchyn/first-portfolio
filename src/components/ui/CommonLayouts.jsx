@@ -47,3 +47,15 @@ export const LinkText = ({ link, children, className }) => {
     </p>
   );
 };
+
+export const SectionTitle = ({ children }) => {
+  return <p className="font-semibold pt-4">{children}</p>;
+};
+
+export const GrayText = ({ children }) => {
+  return <span className="text-gray">{children}</span>;
+};
+
+export const ForegroundText = ({ children }) => {
+  return <span className="text-foreground">{children}</span>;
+};

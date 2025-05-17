@@ -46,7 +46,6 @@ export const toolLogos = [
 export const navigationTabs = [
   { label: '소개', targetId: 'info', icon: InfoIcon },
   { label: '핵심 가치', targetId: 'values', icon: SparkleIcon },
-  // { label: '이력', targetId: 'history', icon: HistoyIcon },
   { label: '기술', targetId: 'skills', icon: SkillIcon },
   { label: '프로젝트', targetId: 'project', icon: ProjectIcon },
   { label: '연락', targetId: 'contact', icon: MailIcon },
@@ -142,65 +141,53 @@ export const blogContents = [
   },
 ];
 
-export const projectList = [
+export const values = [
   {
-    title: '스타벅스 스토어 리빌딩',
-    badges: ['팀 프로젝트'],
-    images: [
-      'https://private-user-images.githubusercontent.com/167273902/436890246-b7b7c8c8-af55-47cb-8e30-1877aeb32eb1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDcxOTMyOTMsIm5iZiI6MTc0NzE5Mjk5MywicGF0aCI6Ii8xNjcyNzM5MDIvNDM2ODkwMjQ2LWI3YjdjOGM4LWFmNTUtNDdjYi04ZTMwLTE4NzdhZWIzMmViMS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNTE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDUxNFQwMzIzMTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zOTdhNzFmZjY3NDUyNWYzMTVkMzIwNDhlNTNkZjk2MTE1Zjk4MzVkODhkMjZjNzI0YzA2Y2U0NjVjZDA5ZDIxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.Tyw5xcfxSvPoIXjz0BoBpqdisse2-OEp28bSojcolFs',
-      'https://dummyimage.com/640x640',
-    ],
-    period: '2025.03.11. - 2025.4.25.',
-    readmeUrl: 'https://github.com/4-javachip',
-    contributors: '참여 인원: 5명 (프론트엔드 2명, 백엔드 3명)',
-    techStack: ['Typescript', 'Next.js', 'React', 'Tailwind', 'Shadcn/ui', 'Context API', 'Zod', 'NextAuth'],
+    title: <>동료와 함께 성장해나가는 개발자입니다.</>,
     desc: (
       <>
-        신세계아이앤씨 스파로스 아카데미 6기 교육 중 진행한 1차 프로젝트로, 스타벅스 앱의 온라인 스토어 기능을
-        리빌딩하고 개선하는 것을 목표로 하였습니다.
-        <span className="font-semibold block pt-4">주요 기능</span>
-        인증, 소셜 로그인, 상품 조회 및 필터링, 상품 옵션, 정렬, 검색, 장바구니, 배송지, 찜, 리뷰, 주문/결제
-        <span className="font-semibold block pt-4">참여 역할 및 구현 기능</span>
-        Auth{' '}
-        <span className="text-primary">
-          로그인/회원가입, 소셜 로그인/회원가입, 로그아웃, 이메일 인증, 비밀번호 재설정
-        </span>
+        개발은 혼자서는 할 수 없습니다.
         <br />
-        Main <span className="text-primary">이벤트 배너 슬라이드, 상품 캐러셀, 기획전 페이지, 베스트 페이지 </span>
+        적극적인 소통과 코드 리뷰로 성장을 도모하며,
         <br />
-        Product{' '}
-        <span className="text-primary">
-          검색, 무한 스크롤 상품 리스트, 카테고리에 따른 상품 필터링, 상품 상세, 리뷰 페이지, 상품/리뷰 정렬
-        </span>
-        <br />
-        Order <span className="text-primary">리뷰 작성</span>
+        협업 과정에서 커뮤니케이션을 가장 중요한 가치로 여깁니다.
       </>
     ),
+    img: '/img/value-img1.png',
   },
   {
-    title: '모동숲 가이드',
-    badges: ['개인 프로젝트'],
-    images: [
-      'https://private-user-images.githubusercontent.com/119782741/443063443-fc92265e-e27a-4e88-88e5-604295251c3b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDcxOTIwMDYsIm5iZiI6MTc0NzE5MTcwNiwicGF0aCI6Ii8xMTk3ODI3NDEvNDQzMDYzNDQzLWZjOTIyNjVlLWUyN2EtNGU4OC04OGU1LTYwNDI5NTI1MWMzYi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNTE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDUxNFQwMzAxNDZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iNTViNmM1YWMwOTk3ZmFlMjkyMmFjNjhkMTM0YzY0MmY5OGQwZTUwOWUxNmZkNmVjYWVjMDViZmQ5OWVmYzlkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.M9muiXOX1v719WBDDwKFJ57Cj-cqVNgaaSQoHVc2U5Q',
-      'https://private-user-images.githubusercontent.com/119782741/443063447-58d34d21-7573-4967-bfd5-96a08dd9b675.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDcxOTIwMDYsIm5iZiI6MTc0NzE5MTcwNiwicGF0aCI6Ii8xMTk3ODI3NDEvNDQzMDYzNDQ3LTU4ZDM0ZDIxLTc1NzMtNDk2Ny1iZmQ1LTk2YTA4ZGQ5YjY3NS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNTE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDUxNFQwMzAxNDZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02YWMxZjczNGJjNGM4YzRkOWZmZThhZjNjMjQxNzBkODcyZGQyYzJiNDlmMTdmNTlmZmIxNTcxOTE4OTU4Njk5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.GREfMHSgJIrnzE6q0Pj6-131Tv26ETKhGvNFgPM0lFc',
-      'https://private-user-images.githubusercontent.com/119782741/443063446-8e885ef3-3e95-4182-8551-1bba7c4a0119.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDcxOTIwMDYsIm5iZiI6MTc0NzE5MTcwNiwicGF0aCI6Ii8xMTk3ODI3NDEvNDQzMDYzNDQ2LThlODg1ZWYzLTNlOTUtNDE4Mi04NTUxLTFiYmE3YzRhMDExOS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNTE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDUxNFQwMzAxNDZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jZTNkNGU0ZWMyYzk3Njc0NzZjNDMzNjQ2ZTcyMzE1MmIwZjI1ODI0MTUzYjg2MDc4ODk4MTQxMmI2ODkzZjU4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.LWK4KOz5Hoa-NdPeR4Y9KlbaR-rl_Trk1Yd08ySv2Aw',
-      'https://private-user-images.githubusercontent.com/119782741/443063450-eb193d5f-574f-4db4-9359-92d4fa205833.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDcxOTIwMDYsIm5iZiI6MTc0NzE5MTcwNiwicGF0aCI6Ii8xMTk3ODI3NDEvNDQzMDYzNDUwLWViMTkzZDVmLTU3NGYtNGRiNC05MzU5LTkyZDRmYTIwNTgzMy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNTE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDUxNFQwMzAxNDZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iYWE3Mjk0NmNkZTAzZDJjMjc4ZDEwMTY0MTg4MzMyYzkyODU2NzI1YTBkYmE2YmMzNzc0YjUzMTVlNWNhOGVhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.nh7q6B93YjgN87oMnSQDfPbEyKXMgLw7OexHab2r2yc',
-      'https://private-user-images.githubusercontent.com/119782741/443063445-b20c97f9-d3de-4737-9a30-00b1888756e5.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDcxOTIwMDYsIm5iZiI6MTc0NzE5MTcwNiwicGF0aCI6Ii8xMTk3ODI3NDEvNDQzMDYzNDQ1LWIyMGM5N2Y5LWQzZGUtNDczNy05YTMwLTAwYjE4ODg3NTZlNS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNTE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDUxNFQwMzAxNDZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00YzZhZmFkZjZlM2I1NDcxMDNmMGRlNDUwYmQwYzQxZmE3MmI0MWZkYjhhZjE4NWZjNTc2MzFjZWUwMzQ3NGYxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.p5f7wu2lLIEfbO9OlCBxwGPMw7BACzhzN_nOqif-xCk',
-    ],
-    period: '2024.10.31. - 2025.01.07.',
-    siteUrl: 'https://animal-crossing-guide.vercel.app/',
-    readmeUrl: 'https://github.com/yunchyn/Animal-crossing-guide',
-    contributors: '참여 인원: 1명 (프론트엔드 1명)',
-    techStack: ['Javascript', 'React', 'Styled components', 'Axios', 'Framer motion', 'React query', 'Figma', 'Vercel'],
-    desc: (
+    title: (
       <>
-        게임 '모여봐요 동물의 숲'의 공략 정보와 가이드를 제공하는 사이트로, 오픈 API인 Nookipedia API와 Animal-crossing
-        라이브러리를 이용하여 페이지를 구현하였습니다.
-        <span className="font-semibold block pt-4">주요 기능</span>
-        주민 일람, 생물 도감, 아이템 카탈로그, 레시피 도감, 이벤트 일정, 주민/생물/아이템 상세 페이지, 메인 화면 Todo
-        목록, 키워드 검색 및 카테고리 필터링
+        마치 게임을 하듯
+        <br />
+        배움의 열정을 즐깁니다.
       </>
     ),
+    desc: (
+      <>
+        하루 약 5시간 이상을 기술을 학습하며
+        <br />
+        끊임없이 역량을 넓혀가고 있습니다.
+      </>
+    ),
+    img: '/img/value-img2.png',
+  },
+  {
+    title: (
+      <>
+        끊임없이 자신을 돌아보고
+        <br />
+        성장하는 개발자입니다.
+      </>
+    ),
+    desc: (
+      <>
+        매일 회고를 통해 아쉬웠던 점, 만족스러웠던 점을
+        <br />
+        꾸준히 기록하고 있습니다.
+      </>
+    ),
+    img: '/img/value-img3.png',
   },
 ];
 

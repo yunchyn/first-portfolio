@@ -38,14 +38,14 @@ export default function ProfileArea() {
           <LisenceIcon />
           <CommonBadge
             className="ml-2"
-            bgColor="#9fa5ba"
+            bgColor="#a8adc1"
             textColor="#FFFFFF"
           >
             정보처리기사
           </CommonBadge>
           <CommonBadge
             className="ml-1.5"
-            bgColor="#9fa5ba"
+            bgColor="#a8adc1"
             textColor="#FFFFFF"
           >
             SQLD
