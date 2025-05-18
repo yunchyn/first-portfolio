@@ -8,7 +8,10 @@ export default function Layout() {
 
   return (
     <div className="w-full h-screen max-w-[1280px] mx-auto">
-      <div className="relative max-w-[1180px] pl-[280px] h-full">
+      <div
+        className="relative max-w-[1180px] h-full
+      px-4 md:pl-[280px] "
+      >
         <Header />
         <GlobalNavBar scrollContainerRef={scrollContainerRef} />
         <main ref={scrollContainerRef}>

@@ -9,7 +9,8 @@ export default function ProfileArea() {
     <section className="flex items-center space-x-12 pb-5 w-full">
       <div
         className="bg-[url('/img/profile-img.png')] bg-cover
-         bg-secondary w-[220px] aspect-square rounded-[10px]"
+         bg-secondary w-[220px] aspect-square rounded-[10px]
+         hidden md:block"
       ></div>
       <div>
         <p className="font-semibold text-[22px] pb-6 flex flex-row items-center">

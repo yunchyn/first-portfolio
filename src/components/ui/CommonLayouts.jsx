@@ -1,9 +1,10 @@
 import clsx from 'clsx';
+import { motion } from 'framer-motion';
 
 export const CommonBadge = ({ children, className, bgColor, textColor }) => {
   return (
     <div
-      className={clsx('py-1 px-2.5 text-sm rounded-xl bg-secondary text-primary', className)}
+      className={clsx('py-1 px-2.5 text-xs md:text-sm rounded-xl bg-secondary text-primary', className)}
       style={{ backgroundColor: bgColor, color: textColor }}
     >
       {children}
@@ -16,21 +17,29 @@ export const CommonCard = ({ children, className }) => {
 };
 
 export const SectionHeading = ({ children, className }) => {
-  return <h1 className={clsx('font-semibold text-[32px] leading-normal pb-16', className)}>{children}</h1>;
+  return (
+    <h1 className={clsx('font-semibold text-[28px] md:text-[32px] leading-normal pb-10 md:pb-16', className)}>
+      {children}
+    </h1>
+  );
 };
 
 export const SubHeading = ({ children, className }) => {
-  return <h1 className={clsx('font-semibold text-[20px]', className)}>{children}</h1>;
+  return <h1 className={clsx('font-semibold text-lg sm:text-[20px]', className)}>{children}</h1>;
 };
 
 export const CommonSection = ({ id, children, className }) => {
   return (
-    <section
+    <motion.section
       id={id}
       className={clsx('flex flex-col justify-center', className)}
+      initial={{ opacity: 0, y: -50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.2, duration: 0.6, ease: 'easeOut' }}
+      viewport={{ once: true }}
     >
       {children}
-    </section>
+    </motion.section>
   );
 };
 

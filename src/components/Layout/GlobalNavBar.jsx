@@ -35,7 +35,7 @@ export default function GlobalNavBar() {
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 w-[280px] h-screen flex items-center justify-end pr-[64px]">
+    <nav className="hidden md:flex fixed top-0 left-0 w-[280px] h-screen items-center justify-end pr-[64px]">
       <ul className="space-y-7">
         {navigationTabs.map((tab) => {
           const isActive = activeId === tab.targetId;

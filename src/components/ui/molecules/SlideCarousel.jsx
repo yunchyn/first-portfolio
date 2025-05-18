@@ -4,9 +4,9 @@ import Autoplay from 'embla-carousel-autoplay';
 
 export default function SlideCarousel({ slides }) {
   return (
-    <div className="w-1/2 max-w-[500px] mr-8">
+    <div className="w-full sm:w-1/2 max-w-[500px] sm:mr-8 pb-5 sm:p-0 mx-auto">
       <Carousel
-        className="w-full mr-8"
+        className="w-full sm:mr-8"
         plugins={[
           Autoplay({
             delay: 4000,
@@ -18,7 +18,6 @@ export default function SlideCarousel({ slides }) {
             <CarouselItem
               key={idx}
               className="flex items-center justify-center"
-              // className="relative aspect-square w-full"
             >
               <img
                 src={src}

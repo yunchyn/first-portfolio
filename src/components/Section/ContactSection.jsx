@@ -16,8 +16,7 @@ export default function ContactSection() {
     >
       <SectionHeading>읽어주셔서 감사합니다.</SectionHeading>
       <p>
-        자세한 내용은 인터뷰를 통해 설명드리고 싶습니다. <br />
-        감사합니다.
+        자세한 내용은 인터뷰를 통해 설명드리고 싶습니다. <br />매 순간 성장해 나가는 개발자가 되겠습니다. 감사합니다.
       </p>
       <div className="flex flex-row items-center gap-4 pb-22">
         <div
@@ -43,7 +42,7 @@ export default function ContactSection() {
         <p className="text-sm text-primary leading-4.5">
           마지막 업데이트
           <br />
-          2025.05.17
+          2025.05.18
         </p>
         <button
           onClick={scrollToTop}

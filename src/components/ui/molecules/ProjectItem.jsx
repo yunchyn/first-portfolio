@@ -23,10 +23,9 @@ export default function ProjectItem({ data }) {
   } = data;
 
   return (
-    <section className="flex flex-row">
+    <section className="flex flex-col sm:flex-row">
       <SlideCarousel slides={images} />
-      {/* <CommonCard className="w-1/2 h-1/2 max-w-[500px] aspect-square mr-8"></CommonCard> */}
-      <div className="w-1/2 flex flex-col justify-between">
+      <div className="sm:w-1/2 flex flex-col justify-between">
         <div className="w-full space-y-1.5">
           {badges.map((badge, index) => (
             <CommonBadge

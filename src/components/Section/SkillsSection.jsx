@@ -1,23 +1,25 @@
 import React from 'react';
-import { CommonCard, SectionHeading, SubHeading } from '../ui/CommonLayouts';
+import { CommonCard, CommonSection, SectionHeading, SubHeading } from '../ui/CommonLayouts';
 import { skillsList } from '@/data/initials';
 
 export default function SkillsSection() {
   return (
-    <section
-      id="skills"
-      className="flex flex-col justify-center"
-    >
+    <CommonSection id="skills">
       <SectionHeading>다음과 같은 기술을 사용합니다.</SectionHeading>
-      <div className="w-full grid grid-cols-3 gap-x-5 gap-y-[90px]">
+      <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-14 sm:gap-y-[90px]">
         {skillsList.map((group) => (
           <div
             className="flex flex-col"
             key={group.title}
           >
-            <SubHeading className="text-center pb-2.5">{group.title}</SubHeading>
-            <CommonCard className="aspect-square bg-secondary p-4">
-              <div className="w-full grid grid-cols-3 gap-3">
+            <div
+              className="h-[66px] md:h-auto
+             flex items-center justify-center"
+            >
+              <SubHeading className="text-center pb-2.5">{group.title}</SubHeading>
+            </div>
+            <CommonCard className="aspect-square bg-secondary p-3 sm:p-4">
+              <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-3">
                 {group.items.map((tech) => (
                   <div
                     className="flex flex-col"
@@ -27,7 +29,7 @@ export default function SkillsSection() {
                       <img
                         src={tech.src}
                         alt={tech.label}
-                        className="w-15 h-15 rounded-lg"
+                        className="w-15 h-15 rounded-lg p-1.5"
                       />
                       <div
                         className="absolute w-full h-full flex justify-center items-center z-5 bg-white/50 backdrop-blur-xs
@@ -50,6 +52,6 @@ export default function SkillsSection() {
           </div>
         ))}
       </div>
-    </section>
+    </CommonSection>
   );
 }

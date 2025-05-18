@@ -33,7 +33,7 @@ export default function Header() {
       <h1
         className={`font-bold  leading-normal 
         transition-all duration-300 
-        ${isScrolled ? 'text-[20px] pb-5' : 'text-6xl pb-3'}`}
+        ${isScrolled ? 'text-[20px] pb-5' : 'text-4xl md:text-6xl pb-3'}`}
       >
         웹 프론트엔드 윤채영
       </h1>
